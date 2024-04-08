@@ -2,3 +2,15 @@
   --primary-color: #007bff;
   --secondary-color: #6c757d;
 }
+
+@media (prefers-color-scheme: light) {
+  #favicon {
+    content: url("../icons/shapeBlack.png");
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #favicon {
+    content: url("../icons/shapeWhite.png");
+  }
+}
