@@ -6,7 +6,7 @@
   --gray-color: #262626;
 
   /* font-sizes */
-  --font-size-small: clamp(1rem, 1vw + 1rem, 1.2rem);
+  --font-size-small: clamp(0.6rem, 1vw + 0.6rem, 1.2rem);
   --font-size-medium: clamp(0.8rem, 1vw + 0.8rem, 1.6rem);
   --font-size-large: clamp(1rem, 1vw + 1rem, 2rem);
 
@@ -25,6 +25,37 @@
 }
 
 .hidden {
+  display: none;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-resizer {
   display: none;
 }
 

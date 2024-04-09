@@ -1,4 +1,4 @@
-nav ul li:nth-child(1) a::before {
+nav ul li:nth-child(3) a::before {
   content: "";
   position: absolute;
   bottom: -0.5rem;

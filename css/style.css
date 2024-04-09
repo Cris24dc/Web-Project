@@ -19,7 +19,7 @@ header {
   position: relative;
 }
 
-header:before {
+header::before {
   content: "";
   position: absolute;
   left: 0;
@@ -58,11 +58,7 @@ main {
 }
 
 .section1 {
-  height: 90vh;
-}
-
-.section2 {
-  height: 90vh;
+  height: 80vh;
 }
 
 /* footer */
@@ -91,7 +87,7 @@ footer {
     top: 0;
     right: 0;
     padding-top: 10vh;
-    width: 25vw;
+    width: 35vw;
     height: 100vh;
     z-index: 100;
     background-color: var(--gray-color);
@@ -109,9 +105,13 @@ footer {
   nav a {
     text-decoration: none;
     font-family: var(--secondary-font);
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-large);
     font-weight: lighter;
     color: inherit;
+  }
+
+  nav a:hover {
+    font-family: var(--secondary-font-bold);
   }
 }
 
@@ -143,11 +143,16 @@ footer {
   }
 
   nav a {
+    position: relative;
     text-decoration: none;
     font-family: var(--secondary-font);
     font-size: var(--font-size-medium);
     font-weight: lighter;
     color: inherit;
+  }
+
+  nav a:hover {
+    font-family: var(--secondary-font-bold);
   }
 
   .dropdown-btn {
