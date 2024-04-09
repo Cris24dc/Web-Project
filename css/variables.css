@@ -1,16 +1,34 @@
 :root {
+  /* colors */
   --background-color: #f5f5f5;
   --white-color: #ffffff;
   --black-color: #000000;
   --gray-color: #262626;
+
+  /* font-sizes */
+  --font-size-small: clamp(1rem, 1vw + 1rem, 1.2rem);
+  --font-size-medium: clamp(0.8rem, 1vw + 0.8rem, 1.6rem);
+  --font-size-large: clamp(1rem, 1vw + 1rem, 2rem);
+
+  /* font-families */
   --primary-font: monument_extendedregular, sans-serif;
+  --primary-font-bold: monument_extendedultrabold, sans-serif;
   --secondary-font: sansationregular, sans-serif;
+  --secondary-font-light: sansation_lightregular, sans-serif;
+  --secondary-font-italic: sansationitalic, sans-serif;
+  --secondary-font-bold: sansationbold, sans-serif;
+  --secondary-font-bold-italic: sansationbold_italic, sans-serif;
+  --secondary-font-light-italic: sansation_lightitalic, sans-serif;
+
+  /* others */
+  --padding-var: clamp(0.5rem, 0.5rem + 2vw, 2rem);
 }
 
 .hidden {
   display: none;
 }
 
+/* font-faces */
 @font-face {
   font-family: "sansation_lightitalic";
   src: url("../fonts/sansation_light_italic-webfont.woff2") format("woff2"),
