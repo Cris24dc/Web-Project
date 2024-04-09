@@ -1,16 +1,76 @@
 :root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
+  --background-color: #f5f5f5;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --gray-color: #262626;
+  --primary-font: monument_extendedregular, sans-serif;
+  --secondary-font: sansationregular, sans-serif;
 }
 
-@media (prefers-color-scheme: light) {
-  #favicon {
-    content: url("../icons/shapeBlack.png");
-  }
+.hidden {
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  #favicon {
-    content: url("../icons/shapeWhite.png");
-  }
+@font-face {
+  font-family: "sansation_lightitalic";
+  src: url("../fonts/sansation_light_italic-webfont.woff2") format("woff2"),
+    url("../fonts/sansation_light_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sansationregular";
+  src: url("../fonts/sansation_regular-webfont.woff2") format("woff2"),
+    url("../fonts/sansation_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sansationbold";
+  src: url("../fonts/sansation_bold-webfont.woff2") format("woff2"),
+    url("../fonts/sansation_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sansationbold_italic";
+  src: url("../fonts/sansation_bold_italic-webfont.woff2") format("woff2"),
+    url("../fonts/sansation_bold_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sansationitalic";
+  src: url("../fonts/sansation_italic-webfont.woff2") format("woff2"),
+    url("../fonts/sansation_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sansation_lightregular";
+  src: url("../fonts/sansation_light-webfont.woff2") format("woff2"),
+    url("../fonts/sansation_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "monument_extendedultrabold";
+  src: url("../fonts/monumentextended-ultrabold-webfont.woff2") format("woff2"),
+    url("../fonts/monumentextended-ultrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "monument_extendedregular";
+  src: url("../fonts/monumentextended-regular-webfont.woff2") format("woff2"),
+    url("../fonts/monumentextended-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }

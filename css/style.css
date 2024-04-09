@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+
+header {
+  background-color: blueviolet;
+  height: 10vh;
+  width: 100%;
+}
+
+.logo > img {
+  height: 2.5rem;
+}
+
+/* main */
+
+main {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 {
+  background-color: burlywood;
+  height: 90vh;
+  width: 100%;
+}
+
+.section2 {
+  background-color: red;
+  height: 90vh;
+  width: 100%;
+}
+
+/* footer */
+
+footer {
+  background-color: cadetblue;
+  height: 10vh;
+  width: 100%;
+}
