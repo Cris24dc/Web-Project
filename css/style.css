@@ -50,6 +50,10 @@ nav {
   height: clamp(2rem, 2rem + 1vw, 2.5rem);
 }
 
+.background {
+  display: none;
+}
+
 /* main */
 
 main {
@@ -90,7 +94,7 @@ footer {
     width: 35vw;
     height: 100vh;
     z-index: 100;
-    background-color: var(--gray-color);
+    background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
     color: var(--white-color);
   }
 
