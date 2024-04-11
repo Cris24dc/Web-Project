@@ -8,3 +8,55 @@ nav ul li:nth-child(4) a::before {
   border-bottom: 0.3rem solid var(--black-color);
   border-radius: 2rem;
 }
+
+.section1 {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section1 p {
+  font-size: clamp(2rem, 2rem + 1vw, 3rem);
+  font-family: var(--primary-font);
+  color: var(--black-color);
+  text-align: center;
+}
+
+.section1 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+  font-size: clamp(1.5rem, 1.5rem + 1vw, 2rem);
+  font-family: var(--primary-font);
+  text-decoration: none;
+  border-radius: 1.5rem;
+  transition: 0.3s;
+  color: var(--white-color);
+  background-color: var(--gray-color);
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .section1 p {
+    width: 60vw;
+  }
+
+  .section1 a {
+    width: 60vw;
+  }
+}
+
+/* both */
+@media screen and (min-width: 768px) {
+  .section1 p {
+    width: 50vw;
+  }
+
+  .section1 a {
+    width: 30vw;
+  }
+}

@@ -9,19 +9,6 @@ nav ul li:nth-child(1) a::before {
   border-radius: 2rem;
 }
 
-main {
-  animation: fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /* mobile */
 @media screen and (max-width: 767px) {
   /* section 1 */
@@ -215,5 +202,13 @@ main {
     font-size: clamp(0.5rem, 0.5rem + 1vw, 2rem);
     text-align: center;
     color: var(--black-color);
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .description2 {
+    grid-column: 2 / 6;
+    grid-row: 2 / 3;
   }
 }
