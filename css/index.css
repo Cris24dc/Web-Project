@@ -48,15 +48,6 @@ nav ul li:nth-child(1) a::before {
     right: -10vw;
   }
 
-  @keyframes slideFromRight {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
   .sec1-img {
     height: clamp(20rem, 20rem + 20vw, 30rem);
     z-index: -1;
@@ -125,15 +116,6 @@ nav ul li:nth-child(1) a::before {
 
   .space {
     display: none;
-  }
-
-  @keyframes slideFromRight {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
   }
 
   .title {
@@ -210,5 +192,14 @@ nav ul li:nth-child(1) a::before {
   .description2 {
     grid-column: 2 / 6;
     grid-row: 2 / 3;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
   }
 }
