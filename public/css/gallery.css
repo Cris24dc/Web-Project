@@ -1,0 +1,218 @@
+/* navigation */
+
+nav ul li:nth-child(3) a::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  width: 100%;
+  border-bottom: 0.3rem solid var(--black-color);
+  border-radius: 2rem;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+main {
+  padding-bottom: 10vh;
+}
+
+.section1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.options {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.options-txt {
+  width: 60%;
+  text-align: center;
+  font-size: clamp(1.5rem, 1.4rem + 1vw, 10rem);
+  font-family: var(--primary-font);
+  color: var(--black-color);
+}
+
+.options-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options-add {
+  margin: 0;
+  margin-top: 2rem;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.options img {
+  width: 3.5rem;
+  padding: 0.5rem;
+  background-color: var(--gray-color);
+  border-radius: 1rem;
+}
+
+.shuffle-btn {
+  margin: 0;
+  margin-top: 2rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.shuffle-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  font-family: var(--secondary-font-bold);
+  color: var(--white-color);
+  background-color: var(--light-gray-color);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.drop-card {
+  display: none;
+}
+
+.drop-border {
+  border: 8px solid var(--gray-color);
+}
+
+.card {
+  padding-top: 2rem;
+  width: 90%;
+}
+
+.card p {
+  font-size: clamp(1.5rem, 1.4rem + 1vw, 10rem);
+  color: var(--black-color);
+  text-align: center;
+}
+
+.card img {
+  border-radius: 2rem;
+  display: block;
+  width: 100%;
+}
+
+.details {
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.details-options {
+  display: flex;
+}
+
+.details button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.card-trash-btn {
+  margin-left: 0.5rem;
+}
+
+.details img {
+  width: 3rem;
+}
+
+/* both */
+@media screen and (min-width: 768px) {
+  .options {
+    margin-bottom: 0;
+    height: 20vh;
+    padding: 0 var(--padding-var);
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .options-txt {
+    text-align: left;
+    width: 40%;
+  }
+
+  .options-btn {
+    flex-direction: row;
+  }
+
+  .options-add {
+    margin-top: 0rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shuffle-btn {
+    margin: 0;
+  }
+
+  .cards {
+    padding: var(--padding-var);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+
+  .drop-card {
+    display: block;
+  }
+
+  .card {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .card > img {
+    width: 100%;
+  }
+
+  .details {
+    padding: 1rem;
+  }
+
+  .details img {
+    width: 2.5rem;
+  }
+
+  .card p {
+    font-size: clamp(1.4rem, 1.4rem + 1vw, 2rem);
+  }
+}

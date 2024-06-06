@@ -1,0 +1,130 @@
+:root {
+  /* colors */
+  --background-color: #f5f5f5;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --gray-color: #262626;
+  --light-gray-color: #bebebe;
+
+  /* font-sizes */
+  --font-size-small: clamp(0.6rem, 1vw + 0.6rem, 1.2rem);
+  --font-size-medium: clamp(0.8rem, 1vw + 0.8rem, 1.6rem);
+  --font-size-large: clamp(1rem, 1vw + 1rem, 2rem);
+
+  /* font-families */
+  --primary-font: monument_extendedregular, sans-serif;
+  --primary-font-bold: monument_extendedultrabold, sans-serif;
+  --secondary-font: sansationregular, sans-serif;
+  --secondary-font-light: sansation_lightregular, sans-serif;
+  --secondary-font-italic: sansationitalic, sans-serif;
+  --secondary-font-bold: sansationbold, sans-serif;
+  --secondary-font-bold-italic: sansationbold_italic, sans-serif;
+  --secondary-font-light-italic: sansation_lightitalic, sans-serif;
+
+  /* others */
+  --padding-var: clamp(0.5rem, 0.5rem + 2vw, 2rem);
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden2 {
+  visibility: hidden;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-resizer {
+  display: none;
+}
+
+/* font-faces */
+@font-face {
+  font-family: "sansation_lightitalic";
+  src: url("../fonts/sansation_light_italic-webfont.woff2") format("woff2"),
+    url("../fonts/sansation_light_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sansationregular";
+  src: url("../fonts/sansation_regular-webfont.woff2") format("woff2"),
+    url("../fonts/sansation_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sansationbold";
+  src: url("../fonts/sansation_bold-webfont.woff2") format("woff2"),
+    url("../fonts/sansation_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sansationbold_italic";
+  src: url("../fonts/sansation_bold_italic-webfont.woff2") format("woff2"),
+    url("../fonts/sansation_bold_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sansationitalic";
+  src: url("../fonts/sansation_italic-webfont.woff2") format("woff2"),
+    url("../fonts/sansation_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sansation_lightregular";
+  src: url("../fonts/sansation_light-webfont.woff2") format("woff2"),
+    url("../fonts/sansation_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "monument_extendedultrabold";
+  src: url("../fonts/monumentextended-ultrabold-webfont.woff2") format("woff2"),
+    url("../fonts/monumentextended-ultrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "monument_extendedregular";
+  src: url("../fonts/monumentextended-regular-webfont.woff2") format("woff2"),
+    url("../fonts/monumentextended-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
